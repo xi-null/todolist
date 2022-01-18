@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_3126990_2ouo0pqux0h.css">
+    <title>Document</title>>
+</head>
+<body>
+    <div id="box">
+        <h1>Todos</h1>
+        <div id="input">
+            <input type="text" id="content" placeholder="todo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'todo'">
+            <button>添加</button>
+    </div>
+        <!--滚动条-->
+        <div style="height: 400px; overflow:scroll;overflow-x:hidden">
+            <ul id="ul"></ul>
+        </div>
+        <div class="location">
+            <p><input id="value"></p>
+            <span><button id="confirm">确定修改</button></span>
+            <span><button id="cancel">取消修改</button></span>
+        </div>
+    </div>
+    <script src="todolist.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</body>
+
+</html>

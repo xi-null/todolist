@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    width: 1440;
+    height: 1080;
+    background-image: url(./11.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 135%;
+    overflow-x: hidden;
+    transform: scale(1.2);
+}
+#box{
+    width: 300px;
+    margin: 80px auto 0 auto;
+    padding: 10px;
+    min-height: 450px;
+    background: rgba(155, 154, 230, 0.7);
+    position: relative;
+    box-shadow: 0px 3px 10px #4b78dd,3px 0px 10px #4b78dd;
+    border-radius: 10px;
+}
+#box h1{
+    color: #FCFFFF;
+    width: 90px;
+    margin: 38px auto;
+}
+#input {
+    font-size: 0;   
+    position: relative;
+}
+#input input{
+    width: 80%;
+    height: 30px;
+    margin-left: 9%;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: #AFB2B9;
+    text-align: center;
+}
+#input input{ 
+    color: #AFB2B9;
+    text-align: center;
+}
+
+#input button{
+    width: 45px;
+    height: 30px;
+    border-radius: 0 15px 15px 0;
+    background-color: #416dd6;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s 0.1s;
+    visibility: hidden;
+    color: #fff;;
+}
+#input input:focus + button, #input button:hover{
+    opacity: 1;
+    visibility: visible;
+}
+#input button:hover{
+    background-color: #416dd6;
+}
+ul{
+    margin: 30px 0;
+}
+ul li{
+    width: 224px;
+    margin:  10px 0 0 9%;
+    color: #FCFFFF;
+    background-color: #416dd6;
+    font-size: 15px;
+    font-weight: 380;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+ul li:hover{
+    background-color: #416dd6;
+    transition: all 0.4s ;
+}
+.location{
+    position: absolute;
+    visibility: hidden;
+    top: 40%;
+    width: 80%;
+    height: 20%;
+    background: rgba(155, 154, 230, 0.7);
+    margin-left: 7%;
+    border: 1px solid;
+    border-color: rgba(155, 154, 230, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px #4b78dd,3px 0px 10px #4b78dd;
+
+}
+.location input{
+    width: 100%;
+    height: 30px;
+    background: rgba(66, 65, 160, 0.7);
+    margin-top: 10px;
+}
+.location span>button{
+    width: 49%;
+    margin-top: 10px;
+    background: rgba(66, 65, 160, 0.7);
+    border-color: rgba(155, 154, 230, 0.7);
+    height: 30px;
+}
